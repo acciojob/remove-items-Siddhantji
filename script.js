@@ -1,13 +1,13 @@
-//your JS code here. If required.
-let a = document.getElementById("colorSelection");
-let b = document.querySelector("input[type='button']");
+let colorSelect = document.getElementById("colorSelection"); // Assuming ID is "colorSelection"
+let removeButton = document.querySelector("input[type='button']");
 
-b.addEventListener("click",function (params) {
-	const s = a.selectedIndex;
-	if(s !== -1){
-		a.options[s].remove();
-	}
-	else{
-		alert('please select an option to remove');
-}
+removeButton.addEventListener("click", function() {
+  const selectedIndex = colorSelect.selectedIndex;
+
+  // Check if a valid option is selected (not -1 for no selection)
+  if (selectedIndex !== -1) {
+    colorSelect.remove(selectedIndex);
+  } else {
+    alert("Please select an option to remove!");
+  }
 });
