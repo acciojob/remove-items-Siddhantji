@@ -3,7 +3,7 @@ let a = document.getElementById("colorSelection");
 let b = document.querySelector("input[type='button']");
 
 b.addEventListener("click",function (params) {
-	const s = a.selectedIndex();
+	const s = a.selectedIndex;
 	if(s !== -1){
 		a.remove(s);
 	}
