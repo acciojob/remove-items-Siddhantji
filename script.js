@@ -1,4 +1,4 @@
-let a = document.getElementById("colorSelection");
+let a = document.getElementById("colorSelect");
 let b = document.querySelector("input[type='button']");
 
 b.addEventListener("click", function() {
